@@ -1,0 +1,266 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.circle1 {
+  width: 80%;
+  border-radius: 100%;
+  border: 1px dashed rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  border-width: 3px;
+}
+
+.circle1::after {
+  content: "";
+  padding-bottom: 100%;
+  line-height: 0;
+}
+
+.circle2 {
+  width: 80%;
+  border-radius: 100%;
+  border: 1px dashed rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 3px;
+  position: absolute;
+}
+
+.circle2::after {
+  content: "";
+  padding-bottom: 100%;
+  line-height: 0;
+}
+
+.circle3 {
+  width: 80%;
+  border-radius: 100%;
+  border: 1px dashed rgb(255, 255, 255);
+  display: flex;
+  background-color: transparent;
+  border-width: 3px;
+  position: absolute;
+  align-items: center;
+}
+
+.circle3::after {
+  content: "";
+  padding-bottom: 100%;
+  line-height: 0;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 10%;
+  align-items: center;
+}
+h5 {
+  font-size: 3vw;
+  color: aliceblue;
+  text-align: center;
+}
+span {
+  color: #5df5b5;
+}
+p {
+  font-size: 1vw;
+  text-align: center;
+  color: aliceblue;
+}
+.btn {
+  font-size: 1vw;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 30px;
+  border: solid 1px green;
+  background-color: #083542;
+  max-width: fit-content;
+  align-self: center;
+}
+
+/* cented circle */
+.rotate {
+  position: relative;
+  right: 20px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: circle3-route 10s infinite;
+}
+
+.inner {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/gta.png");
+  border-radius: 20%;
+  display: block;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  background-color: lightslategray;
+}
+
+/* midel circle */
+.rotate-2-1 {
+  position: relative;
+  right: 20px;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  animation: circle3-route 10s infinite;
+  animation-delay: 2s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate-2-2 {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border: 1px dashed rgb(255, 255, 255);
+  /* animation: circle3-route 10s infinite; */
+}
+
+.inner-r2-1 {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/gametwo.png");
+  border-radius: 20%;
+  display: block;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  background-color: yellow;
+  animation-delay: 2s;
+  position: absolute;
+  right: -30px;
+}
+.inner-r2-2 {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/xbox.png");
+  border-radius: 20%;
+  display: block;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  background-color: green;
+  animation-delay: 2s;
+}
+
+/* outer circle */
+.rotate-3-1 {
+  position: relative;
+  right: 20px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: circle3-route 10s infinite;
+  animation-delay: 3s;
+}
+
+.rotate-3-2 {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgb(255, 255, 255);
+}
+
+.inner-r3-1 {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/xman.png");
+  border-radius: 20%;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  background-color: green;
+  animation-delay: 3s;
+  left: 0;
+  position: absolute;
+}
+
+.inner-r3-2 {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/socer.png");
+  border-radius: 20%;
+  display: block;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  background-color: whitesmoke;
+  animation-delay: 3s;
+  position: absolute;
+  right: -40px;
+}
+
+.inner-r3-3 {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/game/dragon.png  ");
+  border-radius: 20%;
+  display: block;
+  animation: imgcirle-3 10s infinite;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(255, 255, 255);
+  background-position: center;
+  animation-delay: 3s;
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+@keyframes imgcirle-3 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(-90deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-180deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-270deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes circle3-route {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  25% {
+    top: -20px;
+    -webkit-transform: rotateZ(90deg);
+  }
+  50% {
+    right: -20px;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+  }
+  75% {
+    top: 20px;
+    -webkit-transform: rotateZ(270deg);
+  }
+  100% {
+    right: 20px;
+    -webkit-transform: rotateZ(360deg);
+  }
+}

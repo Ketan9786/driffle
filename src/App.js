@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import Home from './component/Home'
 import './App.css';
+import logo from './assets/logo.png'
+import region from './assets/region.png'
+import favicon from './assets/favorite.png'
+import profle from './assets/profile.png'
+import cart from './assets/cartnotification.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     {/* Navbar section  */}
+      <div className='navbar'>
+        <div><img src={logo} alt='' /></div>
+
+        <div className='navbar-item'>
+          <div><img src={region} alt='' /></div>
+
+          <div>India (English) INR</div>
+          <div> <img src={favicon} alt='' /></div>
+          <div> <img src={cart} alt='' /></div>
+          <div><img src={profle} alt='' /></div>
+
+        </div>
+
+      </div>
+
+      <Home />
+
+
+    </>
+
+
   );
 }
 
